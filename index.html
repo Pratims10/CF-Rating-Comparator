@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript - read JSON from URL</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+	<div style="height: 80px;width:110%;margin-left: 0%;margin-top: -1.5%; background-color: #f2f2f2">
+		<center><table style="width: 70%" border="0"><tr><td><h1 style="font-family: Calibri"><article style="margin-left: 36%">Codeforces Rating comparator</article></h1></td>
+        <td><button class="button button5" style="margin-left: 30%" onclick="redirect()">Compare rating with others</button></td></tr></table></center>
+        <center><article style="font-size: 11px;margin-top: -1.5%;margin-left: 10%">Made by Pratim Sarkar</article></center>
+	</div>
+    <br/>
+    <br/><br/><br/>
+    <center>
+    <table style="margin-left:0%;width:45%"><tr><td>
+    <input type="text" id="user1" placeholder="Enter First Username" class="txt"></td>
+    <td> <input type ="text" id="user2" placeholder="Enter Second Username" class="txt"></td>
+	</tr>
+    <tr><td colspan="2"><center><br/><button id="submit" onclick="myfunc()" class="button button4"><b>Submit</b></button></center></td></tr></table>
+    </center>
+    <center>
+    <div style="padding-left: 0%;margin-left: 0%;margin-top: 2%" class="mypanel"></div>
+    <br/><br/>
+    <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+</center>
+</body>
+</html>
+
+
+
+<!--https://codeforces.com/api/user.friends?onlyOnline=false&apiKey=8d110ca0977988cb6c9362c4700d7ba9c81bd667&time=1572958750903&apiSig=123456e7a457aaff1e07438df0f6ff78fb6e045af2904c3ca3d3245b5e0a5cc69265c5b72f174f0c1aa9392a69dd4a6ee8a1860b1c66d3222614ead65deb4932643479
+
+
+123456/user.friends?apiKey=8d110ca0977988cb6c9362c4700d7ba9c81bd667&onlyOnline=false&time=1572958750903#81d39f4ba041d9463d8311d1ef9a6dfaa100edd0
+
+e7a457aaff1e07438df0f6ff78fb6e045af2904c3ca3d3245b5e0a5cc69265c5b72f174f0c1aa9392a69dd4a6ee8a1860b1c66d3222614ead65deb4932643479-->
