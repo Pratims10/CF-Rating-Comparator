@@ -91,5 +91,5 @@ function toggleDataSeries(e) {
 	}
 function redirect()
 {
-	location.replace('file:///C:/Users/PRATIM/Desktop/WEB%20DEV%20COURSERA/React%20Udemy/compare.html');
+	location.replace('https://pratims10.github.io/CF-Rating-Comparator/compare.html');
 }
