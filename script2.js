@@ -18,6 +18,7 @@ function compare2(a,b)
 function add()
 {
 	document.getElementById("btnadd").disabled = true;
+	$('#btnadd').addClass("disable");
 	let s=document.getElementById('username').value;
 	s=s.trim();
 	s=s.toLowerCase();
@@ -36,7 +37,10 @@ function add()
 	{
 		add2();
 	}
-	document.getElementById("btnadd").disabled = false;
+	setTimeout(function(){
+  		document.getElementById("btnadd").disabled = false;
+  		$('#btnadd').removeClass("disable");
+	}, 1000);
 }
 function add1()
 {
@@ -75,9 +79,9 @@ function check(list)
 function add2()
 {
 	lst.sort(compare);
-	let list=lst;
-	alert(list[0]["name"]);
-	check(list);
+//	let list=lst;
+//	alert(list[0]["name"]);
+//	check(list);
 	var str="<table>";
 	for(i=0;i<lst.length-1;i++)
 	{
@@ -93,3 +97,11 @@ function redirect()
 {
 	location.replace('https://pratims10.github.io/CF-Rating-Comparator/index.html');
 }
+$('#btnadd').click(function(){
+    var btn = $(this);
+    $.post('/echo/json/',{delay: 3}).complete(function(){
+        btn.prop('disabled', false);
+    });
+    btn.prop('disabled', true);
+
+});
