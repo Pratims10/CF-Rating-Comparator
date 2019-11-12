@@ -57,31 +57,9 @@ function add1()
 		lst.push(x);
 	});
 }
-function check(list)
-{
-	list.sort(compare2);
-	let a=[];
-	let ctr=0;
-	for(i=0;i<list.length;i++)
-	{
-		a.push(list[i]);
-		while(i<list.length && list[i]["name"]===a[ctr]["name"])
-		{
-			i++;
-		}
-		alert("d"+a[ctr].name);
-		ctr++;
-	}
-	a.sort(compare);
-	lst=a;
-	alert(lst.length);
-}
 function add2()
 {
 	lst.sort(compare);
-//	let list=lst;
-//	alert(list[0]["name"]);
-//	check(list);
 	var str="<table>";
 	for(i=0;i<lst.length-1;i++)
 	{
@@ -97,11 +75,3 @@ function redirect()
 {
 	location.replace('https://pratims10.github.io/CF-Rating-Comparator/index.html');
 }
-$('#btnadd').click(function(){
-    var btn = $(this);
-    $.post('/echo/json/',{delay: 3}).complete(function(){
-        btn.prop('disabled', false);
-    });
-    btn.prop('disabled', true);
-
-});
