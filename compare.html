@@ -18,7 +18,7 @@
 						<table style="width: 70%" border="0"><tr><td>
 							<h1 style="font-family: Calibri"><article style="margin-left: 30.5%">Codeforces Rating comparator</article></h1>
 						</td>
-				        <td><button class="button button5" style="margin-left: 30%" onclick="redirect()">Compare rating</button></td>
+				        <td><button class="button button5" style="margin-left: 30%" onclick="redirect()"><b>Compare rating</b></button></td>
 				    	</tr>
 				    	</table>
 				    </center>
@@ -28,16 +28,27 @@
         			<div style="margin-left: -8%">
         				<center>
         					<br/><br/><br/><br/>
-        					<input type="text" id="username" placeholder="Enter username" class="txt2" width="20%">
+        					<table border="0">
+        					<tr><td>
+        					<table border="0"><tr><td>
+        					<input type="text" id="username" placeholder="Enter username" class="txt2" style="width: 250px"></td></tr>
+        					<tr><td>
+        					<article style="font-size: 12px;text-decoration-color: red">*If username is not added into list, click Add again</article></td></tr></table>
+        					</td>
+        					<td>
 					        &nbsp;&nbsp;&nbsp;
-        					<button class="button button5" id="btnadd" onclick ="add()"><b>Add</b></button>
+        					</td><td>
+        					<button class="button button5" style="margin-top: -68%" id="btnadd" onclick ="add()"><b>Add to list</b></button>
+        					<button class="button button5" style="margin-top: -68%" id="btnclear" onclick ="clear2()"><b>Clear list</b></button>
+        					</td></tr></table>
     					</center></div>
 					</div>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<div style="margin-top: 10%;margin-left: 35%" class="output"></div>
+				<div style="margin-top: 10%;margin-left: 35%; border-radius: 50%" class="output">
+				</div>
 			</td>
 		</tr>
 	</table>
