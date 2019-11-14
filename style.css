@@ -6,14 +6,8 @@
 .button5{
 	background-color: #33cc33;
 }
-.button5:hover{
-	background-color: #00b300;
-}
-.button4:hover{
-  background-color: #e7e7e7;
-}
 .button{
-  border:2px solid gray;
+  border:1px solid gray;
   color: black;
   padding: 7px 18px;
   text-align: center;
@@ -21,8 +15,8 @@
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+ /*-webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;*/
   cursor: pointer;
   border-radius: 4px;
 }
@@ -46,4 +40,5 @@ input
 .disable{
   color: gray;
   background-color: #f2f2f2;
+  cursor: no-drop;
 }
